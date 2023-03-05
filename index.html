@@ -67,6 +67,60 @@
           <button class="hero-btn" data-modal-open>Order Service</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+              <form class="form">
+                <p class="modal-text">
+                  Leave your contacts and we will call you back
+                </p>
+
+                <span class="form-field">
+                  <label for="name" class="form-label">Name</label>
+
+                  <input type="name" class="form-input" name="name" id="name" />
+                </span>
+                <span class="form-field">
+                  <label for="phone" class="form-label">Phone</label>
+
+                  <input
+                    type="phone"
+                    class="form-input"
+                    name="phone"
+                    id="phone"
+                  />
+                </span>
+                <span class="form-field">
+                  <label for="email" class="form-label">Email</label>
+
+                  <input
+                    type="email"
+                    class="form-input"
+                    name="email"
+                    id="email"
+                  />
+                </span>
+                <span class="textarea">
+                  <label for="comment" class="form-label">Comment</label>
+                  <textarea
+                    class="textarea-backdrop"
+                    id="textarea"
+                    name="textarea-name"
+                    placeholder="Text input"
+                  ></textarea>
+                </span>
+                <span class="checkbox">
+                  <input
+                    type="checkbox"
+                    class="checkbox-input"
+                    name="checkbox"
+                    id="checkbox-id"
+                  />
+                  <label for="checkbox-id" class="checkbox-label"
+                    >I accept the terms and conditions of the
+                    <a href="#">Privacy Policy</a></label
+                  >
+                </span>
+                <button class="form-button" type="submit">Send</button>
+              </form>
+
               <button data-modal-close class="modal-btn">
                 <svg class="modal-icon" width="8" height="8">
                   <use href="./images/client-sprite.svg#close-btn"></use>
