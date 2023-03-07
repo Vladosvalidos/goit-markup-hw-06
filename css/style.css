@@ -719,6 +719,7 @@ img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
@@ -743,12 +744,21 @@ img {
   margin-bottom: 8px;
   position: relative;
 }
-.form-input {
+/* .form-input {
   width: 360px;
   height: 40px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+} */
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-label {
   display: block;
@@ -776,21 +786,21 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.checkbox-label {
-  font-size: 12px;
-  line-height: 1.17;
-  padding-left: 8px;
-  letter-spacing: 0.04em;
 
-  color: #757575;
-}
 .checkbox {
   padding-left: 24px;
   display: flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
 }
 .checkbox-input {
-  border: 1.25px solid #2e2f42;
-  border-radius: 2px;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
 }
 .textarea > .textarea-backdrop::placeholder {
   font-size: 12px;
@@ -820,16 +830,54 @@ img {
   height: 56px;
 
   color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button:hover,
+.form-button:focus {
+  background: var(--active-color);
 }
 .form-icon {
   position: absolute;
   top: 50%;
-  left: 43px;
+  left: 19px;
+  transform: translate(0, -50%);
+  display: block;
+  padding: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal-form-icon {
+.modal-form-icon {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+}
+.checkbox-label:after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-right: 8px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
   position: absolute;
-  top: 50%;
-  left: 43px;
-  transform: translate(-50%, -50%);
+  left: 24px;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-left: 24px;
+  color: #757575;
+}
+.checkbox-input:checked + .checkbox-label:after {
+  background-color: #404bbf;
+  border: none;
+  background-image: url(../images/click.svg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: contain;
-} */
+}
