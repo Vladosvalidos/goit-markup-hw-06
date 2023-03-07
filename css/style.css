@@ -938,7 +938,7 @@ img {
 }
 
 .footer-form-input:focus {
-  border-color: var(--brand-main-btn-hover);
+  border-color: var(--active-color);
 }
 
 .footer-btn-submit {
@@ -982,5 +982,5 @@ img {
 
 .footer-btn-submit:hover,
 .footer-btn-submit:focus {
-  background: var(--brand-main-btn-hover);
+  background: var(--active-color);
 }
