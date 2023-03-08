@@ -698,6 +698,7 @@ img {
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -732,9 +733,7 @@ img {
 }
 .modal-text {
   display: block;
-  padding-left: 24px;
-  padding-top: 72px;
-  padding-right: 24px;
+
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -747,8 +746,6 @@ img {
 }
 .form-field {
   display: block;
-  padding-left: 24px;
-  padding-right: 24px;
   margin-bottom: 8px;
   position: relative;
 }
@@ -779,8 +776,7 @@ img {
 }
 .textarea {
   display: block;
-  padding-left: 24px;
-  padding-right: 24px;
+
   margin-bottom: 16px;
 }
 .textarea-backdrop {
@@ -799,12 +795,11 @@ img {
 }
 
 .checkbox {
-  padding-left: 24px;
+  /* padding-left: 24px; */
   display: flex;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  position: relative;
 }
 .checkbox-input {
   display: inline-block;
@@ -983,4 +978,8 @@ img {
 .footer-btn-submit:hover,
 .footer-btn-submit:focus {
   background: var(--active-color);
+}
+.textarea:focus {
+  border-color: var(--active-color);
+  outline: none;
 }
