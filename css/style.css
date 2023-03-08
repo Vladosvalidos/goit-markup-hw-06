@@ -606,7 +606,7 @@ img {
 }
 .client-link:is(:hover, :focus) {
   border-color: var(--active-color);
-  border: 1px solid #404bbf;
+  border: 1px solid var(--active-color);
   border-radius: 4px;
 }
 .client-link:is(:hover, :focus) .client-item {
@@ -712,7 +712,7 @@ img {
   right: 24px;
   width: 24px;
   height: 24px;
-  background: #e7e9fc;
+  background: var(--footer-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
@@ -725,7 +725,7 @@ img {
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  background: #404bbf;
+  background: var(--active-color);
 }
 .modal-btn:hover .modal-icon,
 .modal-btn:focus .modal-icon {
@@ -742,7 +742,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
 
-  color: #2e2f42;
+  color: var(--background-footer-color);
 }
 .form-field {
   display: block;
@@ -772,7 +772,7 @@ img {
 
   letter-spacing: 0.04em;
 
-  color: #8e8f99;
+  color: var(--client-border);
 }
 .textarea {
   display: block;
@@ -824,7 +824,7 @@ img {
 }
 
 .form-button {
-  background: #4d5ae5;
+  background: var(--filter-btn-color);
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -835,7 +835,7 @@ img {
   width: 169px;
   height: 56px;
 
-  color: #ffffff;
+  color: var(--background-color);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -865,7 +865,7 @@ img {
   height: 16px;
   cursor: pointer;
   margin-right: 8px;
-  border: 1.25px solid #2e2f42;
+  border: 1.25px solid var(--background-footer-color);
   border-radius: 2px;
   position: absolute;
   left: 24px;
@@ -880,7 +880,7 @@ img {
   color: #757575;
 }
 .checkbox-input:checked + .checkbox-label:after {
-  background-color: #404bbf;
+  background-color: var(--active-color);
   border: none;
   background-image: url(../images/click.svg);
   background-position: center;
@@ -914,7 +914,7 @@ img {
 .footer-form-input {
   padding-left: 16px;
   display: block;
-  color: #ffffff;
+  color: var(--background-color);
   background: none;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
